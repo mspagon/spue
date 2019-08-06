@@ -21,8 +21,12 @@ def off(ip, user, light):
     return response.json()
 
 
-if __name__ == '__main__':
+def main():
     ip = os.getenv("HUE_IPADDRESS")
     user = os.getenv("HUE_USER")
     response = on(ip, user, 5)
     print(response)
+
+
+if __name__ == '__main__':
+    main()
